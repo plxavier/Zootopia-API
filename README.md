@@ -1,4 +1,4 @@
-**# Zootopia-API**
+# Zootopia-API
 
 **A python application using API to fetch data and generate webpage of animals.** 
 
