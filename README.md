@@ -5,7 +5,7 @@
 **Features:**
 1. Animal Search: Find scientific information about any animal
 2. API Integration: Real-time data from Animals Ninja API
-3. HTML Generation: Creates beautiful animal profile pages
+3. HTML Generation: Creates animal profile pages
 4. Data Persistence: Saves animal data of the latest search to JSON for offline use
 
 
@@ -14,11 +14,14 @@
 git clone https://github.com/plxavier/Zootopia-API.git
 cd Zootopia-API
 ```
-
+**Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
 
 **API**
 - Sign up at API-Ninja for API Key
-- Set up the enviroment in .env file with the API key
+- Set up the environment in .env file with the API key
 
 **Run the Application**
 ```bash
@@ -37,3 +40,12 @@ Zootopia-API/
 ├── animals_data.json        # Auto-generated data storage
 └── animals.html            # Auto-generated webpage
 ```
+
+**Contributing**
+Fork via GitHub
+```bash
+git checkout -b feature/xx
+```
+add, commit, push, and pull request, wait for review to get your contributions accepted!
+Thanks!
+
