@@ -1,6 +1,7 @@
 import json
+import data_fetcher
 
-file_path = 'animals_data.json'
+
 
 
 def load_data(file_path):
@@ -16,25 +17,6 @@ def load_data(file_path):
   except Exception as e:
       print(f"The error is {e}")
       return None
-
-animals_data = load_data('animals_data.json')
-#print(animals_data) #prints the whole nested data; remove # to print
-
-
-def print_data(data):
-    """optional accessing and checking data in json"""
-    try:
-        for animal in animals_data:
-            print(f"Name: {animal['name']}\n"
-                  f"Diet: {animal['characteristics'].get('diet', 'N/A')}\n"
-                  f"Location: {', '.join(animal['locations']) if animal['locations'] else "N/A"}\n"
-                  f"Type: {animal['characteristics'].get('type', 'N/A')}"
-                  f"\n"
-                  )
-    except Exception as e:
-        print(f"The error is {e}")
-
-    #print_data(animals_data) #remove # to print the data with selected key values
 
 
 def serialize_animal(animal):
@@ -91,17 +73,18 @@ def generate_html(animal_data):
 def main():
     """main function to call serialize_animal function and generate html page"""
     try:
+        animals_data = data_fetcher.main()
         if animals_data:
             html_content = generate_html(animals_data)
 
-            if not html_content:
-                print(f"Failed to generate html page")
-            else:
+            if html_content:
                 print(f"Successfully generated animal repository html page "
                       f"with {(html_content.count('\n'))} lines "
                       f"for {len(animals_data)} animals")
+            else:
+                print(f"Failed to generate animal repository html page")
         else:
-            print("No animals data found")
+            print(f"No animals data found ")
     except Exception as e:
         print(f"The error is {e}")
 

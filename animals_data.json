@@ -104,7 +104,7 @@
     }
   },
   {
-    "name": "Darwin’s fox",
+    "name": "Darwin\u2019s fox",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Chordata",
@@ -361,7 +361,7 @@
     "characteristics": {
       "name_of_young": "Pup",
       "group_behavior": "Group",
-      "estimated_population_size": "10,000 – 20,000",
+      "estimated_population_size": "10,000 \u2013 20,000",
       "biggest_threat": "Human hunters",
       "most_distinctive_feature": "Soft golden cap",
       "litter_size": "One",
@@ -571,7 +571,7 @@
       "diet": "Omnivore",
       "color": "BrownBlackWhiteTan",
       "skin_type": "Hair",
-      "lifespan": "12 – 15 years",
+      "lifespan": "12 \u2013 15 years",
       "height": "18 lbs"
     }
   },
@@ -656,7 +656,7 @@
       "diet": "Omnivore",
       "color": "BlackWhiteTan",
       "skin_type": "Hair",
-      "lifespan": "13 – 14 years",
+      "lifespan": "13 \u2013 14 years",
       "weight": "19 lbs"
     }
   }
