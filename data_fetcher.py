@@ -55,17 +55,13 @@ def save_animals_to_file(animals_data, filename: str = "animals_data.json") -> s
         print("❌ No animal data to save")
         return ""
 
-    # Create data directory if it doesn't exist
-    os.makedirs('data', exist_ok=True)
-
-    #Save the list directly (no need to wrap in another list)
     with open(filename, 'w') as f:
         json.dump(animals_data, f, indent=2)
     return filename
 
 
 def main():
-    """Main function to search animal and save data"""
+    """main function to search animal and save data"""
     if not setup_fetcher():
         return None
 
