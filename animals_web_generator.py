@@ -2,8 +2,6 @@ import json
 import data_fetcher
 
 
-
-
 def load_data(file_path):
   """ Loads a JSON file """
   try:

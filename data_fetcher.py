@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 API_KEY = os.getenv("API_KEY")
 HEADERS = {"X-Api-Key": API_KEY}
 REQUEST_URL = f"https://api.api-ninjas.com/v1/animals"
@@ -62,8 +61,6 @@ def save_animals_to_file(animals_data, filename: str = "animals_data.json") -> s
     #Save the list directly (no need to wrap in another list)
     with open(filename, 'w') as f:
         json.dump(animals_data, f, indent=2)
-
-    print(f"Saved {len(animals_data)} animals to {filename}")
     return filename
 
 
@@ -79,7 +76,7 @@ def main():
     if animals_data:
         # Save ALL animals to file
         filename = save_animals_to_file(animals_data)
-        print(f" Data for {len(animals_data)} animals saved to {filename}")
+        print(f"Data for {len(animals_data)} animals saved to {filename}")
         return animals_data
     else:
         print(f" Could not find data for {animal_name}")
