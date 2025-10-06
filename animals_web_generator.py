@@ -57,7 +57,7 @@ def generate_html(animal_data):
         with open('animals.html', 'w') as output_file:
             output_file.write(html_content)
 
-        print("animals.html created successfully")
+        print("Successfully created animals.html")
         return html_content #return html content too for optional downstream processing
 
     except FileNotFoundError:
@@ -76,9 +76,10 @@ def main():
             html_content = generate_html(animals_data)
 
             if html_content:
-                print(f"Successfully generated animal repository html page "
-                      f"with {(html_content.count('\n'))} lines "
-                      f"for {len(animals_data)} animals")
+                print(f"Successfully generated animal repository html page"
+                      f" with {(html_content.count('\n'))} lines "
+                      f"for {len(animals_data)} animals! "
+                      f"Open with browser to see the final webpage!")
             else:
                 print(f"Failed to generate animal repository html page")
         else:

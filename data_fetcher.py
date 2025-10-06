@@ -76,7 +76,7 @@ def main():
     if animals_data:
         # Save ALL animals to file
         filename = save_animals_to_file(animals_data)
-        print(f"Data for {len(animals_data)} animals saved to {filename}")
+        print(f"Data for {len(animals_data)} animals with search-term {animal_name} saved to {filename}")
         return animals_data
     else:
         print(f" Could not find data for {animal_name}")
