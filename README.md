@@ -11,7 +11,7 @@
 
 **Quick Start**
 ```bash
-git clone https://github.com/yourusername/Zootopia-API.git
+git clone https://github.com/plxavier/Zootopia-API.git
 cd Zootopia-API
 ```
 
