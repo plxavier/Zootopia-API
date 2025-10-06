@@ -1,4 +1,4 @@
-# Zootopia-API
+**# Zootopia-API**
 
 **A python application using API to fetch data and generate webpage of animals.** 
 
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 
 **API**
-- Sign up at API-Ninja for API Key
+- Sign up at [API-Ninja](https://api-ninjas.com/) for API Key
 - Set up the environment in .env file with the API key
 
 **Run the Application**
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 python animals_web_generator.py
 Enter the animal name:
 ```
--Open the generated animals.html in your favourite web-browser
+- Open the generated _animals.html_ in your favourite web-browser
 
 **File Structure**
 ```bash
@@ -41,8 +41,9 @@ Zootopia-API/
 └── animals.html            # Auto-generated webpage
 ```
 
-**Contributing**
--Do fork via GitHub
+****Contributions****
+
+- Do fork via GitHub
 ```bash
 git checkout -b feature/xx
 ```
