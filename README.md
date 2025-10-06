@@ -24,10 +24,11 @@ cd Zootopia-API
 ```bash
 python animals_web_generator.py
 Enter the animal name:
-Open the generated animals.html in your favourite web-browser
 ```
+Open the generated animals.html in your favourite web-browser
 
 **File Structure**
+```bash
 Zootopia-API/
 ├── data_fetcher.py          # Main data fetching module
 ├── animals_web_generator.py  # HTML generation module  
@@ -35,4 +36,4 @@ Zootopia-API/
 ├── .env                     # API configuration
 ├── animals_data.json        # Auto-generated data storage
 └── animals.html            # Auto-generated webpage
-
+```
