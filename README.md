@@ -1,6 +1,6 @@
 # Zootopia-API
 
-**A python application using API to generate webpages of animals.** 
+**A python application using API to fetch data and generate webpage of animals.** 
 
 **Features:**
 1. Animal Search: Find scientific information about any animal
@@ -21,9 +21,11 @@ cd Zootopia-API
 - Set up the enviroment in .env file with the API key
 
 **Run the Application**
+```bash
 python animals_web_generator.py
 Enter the animal name:
 Open the generated animals.html in your favourite web-browser
+```
 
 **File Structure**
 Zootopia-API/
