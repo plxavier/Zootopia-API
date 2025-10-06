@@ -9,7 +9,7 @@
 4. Data Persistence: Saves animal data of the latest search to JSON for offline use
 
 
-**Quick Start**
+🚀**Quick Start**
 ```bash
 git clone https://github.com/plxavier/Zootopia-API.git
 cd Zootopia-API
@@ -41,7 +41,7 @@ Zootopia-API/
 └── animals.html            # Auto-generated webpage
 ```
 
-****Contributions****
+🚦****Contributions****
 
 - Do fork via GitHub
 ```bash
