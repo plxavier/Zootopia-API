@@ -28,7 +28,7 @@ pip install -r requirements.txt
 python animals_web_generator.py
 Enter the animal name:
 ```
-Open the generated animals.html in your favourite web-browser
+-Open the generated animals.html in your favourite web-browser
 
 **File Structure**
 ```bash
@@ -42,10 +42,10 @@ Zootopia-API/
 ```
 
 **Contributing**
-Fork via GitHub
+-Do fork via GitHub
 ```bash
 git checkout -b feature/xx
 ```
-add, commit, push, and pull request, wait for review to get your contributions accepted!
+- Then add, commit, push, and pull request, wait for review to get your contributions accepted!
 Thanks!
 
