@@ -40,7 +40,7 @@ def fetch_data(animal_name: str) -> Optional[List[Dict]]:
             return data
 
         else:
-            print(f"No animals found matching '{animal_name}'")
+            print(f"No animals found matching {animal_name}. Try again with a different name.")
             return None
 
     except requests.exceptions.RequestException as e:
@@ -49,7 +49,7 @@ def fetch_data(animal_name: str) -> Optional[List[Dict]]:
 
 
 def save_animals_to_file(animals_data, filename: str = "animals_data.json") -> str:
-    """Save ALL current animals to JSON file"""
+    """Save all animals to JSON file"""
 
     if not animals_data:
         print("❌ No animal data to save")
@@ -65,18 +65,21 @@ def main():
     if not setup_fetcher():
         return None
 
-    animal_name = input("Enter animal name: ").strip()
+    try:
+        animal_name = input("Enter animal name: ").strip()
 
-    animals_data = fetch_data(animal_name)
+        animals_data = fetch_data(animal_name)
 
-    if animals_data:
-        # Save ALL animals to file
-        filename = save_animals_to_file(animals_data)
-        print(f"Data for {len(animals_data)} animals with search-term {animal_name} saved to {filename}")
-        return animals_data
-    else:
-        print(f" Could not find data for {animal_name}")
-        return None
+        if animals_data:
+            filename = save_animals_to_file(animals_data)
+            print(f"Data for {len(animals_data)} animals with search-term {animal_name} saved to {filename}")
+            return animals_data
+        else:
+            print(f"Could not find data for {animal_name}. Try again with a different name.")
+            return None
+
+    except Exception as error:
+        print(f"The error was {error}. Try again with valid entry")
 
 
 if __name__ == "__main__":
