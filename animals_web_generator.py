@@ -79,7 +79,7 @@ def main():
                 print(f"Successfully generated animal repository html page"
                       f" with {(html_content.count('\n'))} lines "
                       f"for {len(animals_data)} animals! "
-                      f"Open with browser to see the final webpage!")
+                      f"Open animal.html with browser to see the final webpage!")
             else:
                 print(f"Failed to generate animal repository html page")
         else:

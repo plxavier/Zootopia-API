@@ -52,7 +52,7 @@ def save_animals_to_file(animals_data, filename: str = "animals_data.json") -> s
     """Save all animals to JSON file"""
 
     if not animals_data:
-        print("❌ No animal data to save")
+        print("No animal data to save")
         return ""
 
     with open(filename, 'w') as f:
