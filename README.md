@@ -30,7 +30,7 @@ Enter the animal name:
 ```
 - Open the generated _animals.html_ in your favourite web-browser
 
-**File Structure**
+🗂️**File Structure**
 ```bash
 Zootopia-API/
 ├── data_fetcher.py          # Main data fetching module
